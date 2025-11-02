@@ -34,32 +34,112 @@
 
 /*RESPONSIVIDADE*/
 
-@media screen and  (max-width: 1000px){
-    .imgHero h1 {
-        font-size: 67px;
-    }
-
-    .imgHero p {
-        font-size: 16px;
-    }
+/* Mobile First - Estilos base para telas pequenas */
+.imgHero h1 {
+  font-size: 40px;
+  line-height: 1.2;
 }
 
-@media screen and  (max-width: 420px){
-    .imgHero h1 {
-        font-size: 48px;
-    }
-
-    .imgHero p {
-        font-size: 12px;
-    }
+.imgHero p {
+  font-size: 10px;
+  line-height: 1.5;
 }
 
-@media screen and  (max-width: 290px){
-    .imgHero h1 {
-        font-size: 40px;
-    }
+/* Telas muito pequenas - 320px+ */
+@media screen and (min-width: 320px) {
+  .imgHero h1 {
+    font-size: 44px;
+  }
 
-    .imgHero p {
-        font-size: 10px;
-    }
+  .imgHero p {
+    font-size: 11px;
+  }
+}
+
+/* Mobile médio - 375px+ */
+@media screen and (min-width: 375px) {
+  .imgHero h1 {
+    font-size: 48px;
+  }
+
+  .imgHero p {
+    font-size: 12px;
+  }
+}
+
+/* Mobile grande - 425px+ */
+@media screen and (min-width: 425px) {
+  .imgHero h1 {
+    font-size: 52px;
+  }
+
+  .imgHero p {
+    font-size: 13px;
+  }
+}
+
+/* Tablets pequenos - 600px+ */
+@media screen and (min-width: 600px) {
+  .imgHero h1 {
+    font-size: 58px;
+  }
+
+  .imgHero p {
+    font-size: 14px;
+  }
+}
+
+/* Tablets - 768px+ */
+@media screen and (min-width: 768px) {
+  .imgHero h1 {
+    font-size: 64px;
+  }
+
+  .imgHero p {
+    font-size: 15px;
+  }
+}
+
+/* Desktop pequeno - 1024px+ */
+@media screen and (min-width: 1024px) {
+  .imgHero h1 {
+    font-size: 72px;
+  }
+
+  .imgHero p {
+    font-size: 16px;
+  }
+}
+
+/* Desktop médio - 1280px+ */
+@media screen and (min-width: 1280px) {
+  .imgHero h1 {
+    font-size: 80px;
+  }
+
+  .imgHero p {
+    font-size: 18px;
+  }
+}
+
+/* Desktop grande - 1536px+ */
+@media screen and (min-width: 1536px) {
+  .imgHero h1 {
+    font-size: 88px;
+  }
+
+  .imgHero p {
+    font-size: 20px;
+  }
+}
+
+/* Ultra wide - 1920px+ */
+@media screen and (min-width: 1920px) {
+  .imgHero h1 {
+    font-size: 96px;
+  }
+
+  .imgHero p {
+    font-size: 22px;
+  }
 }

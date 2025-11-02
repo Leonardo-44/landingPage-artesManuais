@@ -47,73 +47,227 @@
 
 /*RESPONSIVIDADE*/
 
-@media screen and (max-width: 1000px) {
-  .about {
-    height: 100vh;
+/* Mobile First - Estilos base para mobile */
+.about {
+  height: auto;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.about h2 {
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.about p {
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.about .card-padding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0;
+}
+
+.card-about {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-about h3 {
+  font-size: 15px;
+}
+
+.card-about p {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* Mobile médio - 375px+ */
+@media screen and (min-width: 375px) {
+  .about h2 {
+    font-size: 30px;
+  }
+
+  .about p {
+    font-size: 12px;
+  }
+
+  .card-about {
+    width: 187px;
+    height: 187px;
+  }
+
+  .card-about h3 {
+    font-size: 16px;
+  }
+
+  .card-about p {
+    font-size: 11px;
+  }
+}
+
+/* Mobile grande - 425px+ */
+@media screen and (min-width: 425px) {
+  .about h2 {
+    font-size: 32px;
   }
 
   .about .card-padding {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    padding: 0;
+    gap: 18px;
   }
 }
 
-@media screen and (max-width: 735px) {
+/* Tablets pequenos - 600px+ */
+@media screen and (min-width: 600px) {
+  .about {
+    padding: 24px;
+  }
 
-    .about h2{
-        font-size: 36px;
-    }
+  .about h2 {
+    font-size: 36px;
+  }
 
-     .about p{
-        font-size: 16px;
-    }
+  .about p {
+    font-size: 14px;
+  }
 
   .card-about {
-      width: 195px;
-      height: 195px;
+    width: 195px;
+    height: 195px;
   }
 
-  .card-about h3 {
-      font-size: 16px;
-  }
-
-  .card-about p {
-      font-size: 11px;
+  .about .card-padding {
+    gap: 20px;
   }
 }
 
-@media screen and (max-width: 570px) {
+/* Tablets - 768px+ */
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 28px;
+  }
 
-    .about h2{
-        font-size: 32px;
-    }
+  .about h2 {
+    font-size: 40px;
+  }
 
-     .about p{
-        font-size: 12px;
-    }
+  .about p {
+    font-size: 16px;
+  }
 
-    .card-about {
-      width: 187px;
-      height: 187px;
+  .card-about {
+    width: 210px;
+    height: 210px;
   }
 
   .card-about h3 {
-      font-size: 16px;
+    font-size: 17px;
   }
 
   .card-about p {
-      font-size: 11px;
+    font-size: 12px;
   }
 
+  .about .card-padding {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
 }
 
-@media screen and (max-width: 360px) {
+/* Desktop pequeno - 1024px+ */
+@media screen and (min-width: 1024px) {
+  .about {
+    padding: 32px;
+  }
 
-     .about p{
-        font-size: 11px;
-    }
+  .about h2 {
+    font-size: 44px;
+  }
 
+  .about p {
+    font-size: 18px;
+  }
+
+  .card-about {
+    width: 230px;
+    height: 230px;
+  }
+
+  .card-about h3 {
+    font-size: 18px;
+  }
+
+  .card-about p {
+    font-size: 13px;
+  }
+
+  .about .card-padding {
+    gap: 28px;
+  }
+}
+
+/* Desktop médio - 1280px+ */
+@media screen and (min-width: 1280px) {
+  .about {
+    padding: 40px;
+  }
+
+  .about h2 {
+    font-size: 48px;
+  }
+
+  .about p {
+    font-size: 20px;
+  }
+
+  .card-about {
+    width: 250px;
+    height: 250px;
+  }
+
+  .card-about h3 {
+    font-size: 19px;
+  }
+
+  .card-about p {
+    font-size: 14px;
+  }
+
+  .about .card-padding {
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Desktop grande - 1536px+ */
+@media screen and (min-width: 1536px) {
+  .about h2 {
+    font-size: 52px;
+  }
+
+  .card-about {
+    width: 270px;
+    height: 270px;
+  }
+
+  .card-about h3 {
+    font-size: 20px;
+  }
+
+  .card-about p {
+    font-size: 15px;
+  }
+
+  .about .card-padding {
+    gap: 36px;
+  }
 }

@@ -51,82 +51,161 @@
 
 /*RESPONSIVIDADE*/
 
-@media screen and (max-width: 1000px) {
-  .products {
-    height: 110vh;
-  }
-
-  .card-products {
-    width: 190px;
-    height: 214px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card-products h3 {
-    font-size: 14px;
-  }
-
-  .card-products p {
-    font-size: 10px;
-  }
-
-  .products-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-  }
-
-  .paddingH3-p {
-    padding: 10px 0 0 10px;
-  }
-
-  .container-p {
-    padding: 0 14px 0 0;
-  }
+/* Mobile First Approach - Estilos base para mobile */
+.products {
+  height: auto; /* Evita altura fixa - melhor usar min-height ou auto */
+  min-height: 100vh;
 }
 
-@media screen and (max-width: 500px) {
-  .products {
-    height: 175vh;
-  }
+.card-products {
+  width: 100%;
+  max-width: 200px;
+  height: auto; /* Altura automática baseada no conteúdo */
+  min-height: 224px;
+  display: flex;
+  flex-direction: column;
+}
 
-  .card-products {
-    width: 200px;
-    height: 224px;
-    display: flex;
-    flex-direction: column;
-  }
+.card-products h3 {
+  font-size: 14px;
+}
 
+.card-products p {
+  font-size: 11px;
+}
+
+.products h2 {
+  font-size: 28px;
+}
+
+.products p {
+  font-size: 14px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px;
+  padding: 20px;
+}
+
+.paddingH3-p {
+  padding: 10px 0 0 10px;
+}
+
+.container-p {
+  padding: 0 14px 0 0;
+}
+
+/* Tablets pequenos - 400px+ */
+@media screen and (min-width: 400px) {
   .products h2 {
     font-size: 32px;
   }
-
-  .products p {
-    font-size: 14px;
-  }
-
-  .card-products h3 {
-    font-size: 14px;
-  }
-
-  .card-products p {
-    font-size: 11px;
-  }
-
-  .products-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 8px; /* espaçamento entre os cards */
-    padding: 20px;
+  
+  .card-products {
+    max-width: 220px;
   }
 }
 
-@media screen and (max-width: 350px) {
-  .products {
-    height: 185vh;
+/* Tablets - 600px+ */
+@media screen and (min-width: 600px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 24px;
+  }
+
+  .card-products {
+    max-width: 240px;
+    min-height: 240px;
   }
 
   .products h2 {
-    font-size: 28px;
+    font-size: 36px;
+  }
+
+  .card-products h3 {
+    font-size: 15px;
+  }
+
+  .card-products p {
+    font-size: 12px;
+  }
+}
+
+/* Tablets grandes - 768px+ */
+@media screen and (min-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 28px;
+  }
+
+  .card-products {
+    max-width: 260px;
+  }
+
+  .products h2 {
+    font-size: 40px;
+  }
+}
+
+/* Desktop pequeno - 1024px+ */
+@media screen and (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 32px;
+  }
+
+  .card-products {
+    max-width: 280px;
+    min-height: 260px;
+  }
+
+  .card-products h3 {
+    font-size: 16px;
+  }
+
+  .card-products p {
+    font-size: 13px;
+  }
+
+  .products h2 {
+    font-size: 44px;
+  }
+
+  .products p {
+    font-size: 16px;
+  }
+}
+
+/* Desktop médio - 1280px+ */
+@media screen and (min-width: 1280px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  .card-products {
+    max-width: 300px;
+  }
+
+  .products h2 {
+    font-size: 48px;
+  }
+}
+
+/* Desktop grande - 1536px+ */
+@media screen and (min-width: 1536px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .card-products {
+    max-width: 320px;
   }
 }
