@@ -25,7 +25,7 @@
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 35px 45px; /* espaçamento entre os cards */
   padding: 30px;
 }
@@ -82,13 +82,6 @@
   font-size: 14px;
 }
 
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 8px;
-  padding: 20px;
-}
-
 .paddingH3-p {
   padding: 10px 0 0 10px;
 }
@@ -101,6 +94,11 @@
 @media screen and (min-width: 400px) {
   .products h2 {
     font-size: 32px;
+  }
+
+  .card-products p {
+    font-size: 12px;
+    padding: 0 16px 16px 0;
   }
   
   .card-products {
@@ -131,6 +129,7 @@
 
   .card-products p {
     font-size: 12px;
+    padding: 0 16px 16px 0;
   }
 }
 
@@ -170,21 +169,20 @@
 
   .card-products p {
     font-size: 13px;
+    padding: 0 0 16px 0;
   }
 
   .products h2 {
     font-size: 44px;
   }
 
-  .products p {
-    font-size: 16px;
-  }
+
 }
 
 /* Desktop médio - 1280px+ */
 @media screen and (min-width: 1280px) {
   .products-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
 
@@ -200,7 +198,7 @@
 /* Desktop grande - 1536px+ */
 @media screen and (min-width: 1536px) {
   .products-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     max-width: 1400px;
     margin: 0 auto;
   }
