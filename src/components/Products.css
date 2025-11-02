@@ -78,10 +78,6 @@
   font-size: 28px;
 }
 
-.products p {
-  font-size: 14px;
-}
-
 .paddingH3-p {
   padding: 10px 0 0 10px;
 }
@@ -91,7 +87,7 @@
 }
 
 /* Tablets pequenos - 400px+ */
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 400px) {
   .products h2 {
     font-size: 32px;
   }

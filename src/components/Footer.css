@@ -13,3 +13,99 @@
 .marginP-p{
     margin: 36px 0 0 0 ;
 }
+
+/* Footer responsivo */
+.footer {
+    padding: 40px 20px;
+    min-height: 200px;
+    gap: 20px;
+}
+
+.footer h3 {
+    font-size: 28px;
+}
+
+.footer p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 35px 20px;
+        min-height: 180px;
+    }
+
+    .footer h3 {
+        font-size: 24px;
+    }
+
+    .footer p {
+        font-size: 15px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 690px) {
+    .footer {
+        padding: 30px 16px;
+        min-height: 160px;
+        gap: 16px;
+    }
+
+    .footer h3 {
+        font-size: 20px;
+    }
+
+    .footer p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .footer .marginP-p {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+}
+
+/* Mobile landscape (deitado) */
+@media screen and (max-width: 690px) and (orientation: landscape) {
+    .footer {
+        padding: 20px 16px;
+        min-height: auto;
+        gap: 12px;
+    }
+
+    .footer h3 {
+        font-size: 18px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+
+    .footer .marginP-p {
+        font-size: 11px;
+    }
+}
+
+/* Mobile pequeno */
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 25px 12px;
+    }
+
+    .footer h3 {
+        font-size: 18px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+
+    .footer .marginP-p {
+        font-size: 11px;
+    }
+}
