@@ -87,14 +87,14 @@
 }
 
 /* Tablets pequenos - 400px+ */
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 400px) {
   .products h2 {
     font-size: 32px;
   }
 
   .card-products p {
     font-size: 12px;
-    padding: 0 16px 16px 0;
+    padding: 0 16px 20px 0;
   }
   
   .card-products {
