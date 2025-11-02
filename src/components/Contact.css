@@ -1,0 +1,57 @@
+.contact{
+    height: 35vh;
+}
+
+.gap-button-img{
+    gap: 16px;
+}
+
+.gap-buttons{
+    gap: 64px;
+}
+
+/*BUTTONS*/
+
+.button-one, .button-two{
+    width: 185px;
+    height: 58px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.4s ease;
+}
+
+.button-one{
+    background-color: #25D366;
+}
+
+.button-one:hover{
+    filter: brightness(0.85); 
+}
+
+.button-two{
+    background: linear-gradient(to left, #FEDA75 2%, #FA7E1E 25%, #D62976 51%, #962FBF 76%, #4F5BD5 100%);
+}
+
+.button-two:hover{
+    filter: brightness(0.85); 
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width: 690px){
+
+    .contact{
+        height: 40vh;
+    }
+
+    .contact p{
+        font-size: 16px;
+    }
+
+    .gap-buttons{
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+    }
+}

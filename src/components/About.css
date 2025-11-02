@@ -1,0 +1,119 @@
+.about {
+  width: 100%;
+  height: 60vh;
+}
+
+.size-12px {
+  font-size: 12px;
+}
+
+.marginImg {
+  margin: 0 0 16px 0;
+}
+
+.h3-p {
+  margin: 0 0 8px 0;
+}
+
+.card-padding {
+  padding: 36px 0 0 0;
+}
+
+/*CARD*/
+
+.card-about {
+  width: 211px;
+  height: 211px;
+  border: #b3b3b3 2px solid;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: 0.4s ease;
+  transform: scale(1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card-about:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.fundo-card {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width: 1000px) {
+  .about {
+    height: 100vh;
+  }
+
+  .about .card-padding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 735px) {
+
+    .about h2{
+        font-size: 36px;
+    }
+
+     .about p{
+        font-size: 16px;
+    }
+
+  .card-about {
+      width: 195px;
+      height: 195px;
+  }
+
+  .card-about h3 {
+      font-size: 16px;
+  }
+
+  .card-about p {
+      font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+
+    .about h2{
+        font-size: 32px;
+    }
+
+     .about p{
+        font-size: 12px;
+    }
+
+    .card-about {
+      width: 187px;
+      height: 187px;
+  }
+
+  .card-about h3 {
+      font-size: 16px;
+  }
+
+  .card-about p {
+      font-size: 11px;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+     .about p{
+        font-size: 11px;
+    }
+
+}

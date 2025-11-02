@@ -1,0 +1,65 @@
+.imgHero{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url(/imageHero.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95vh; /* altura total da viewport */
+}
+
+.heigth{
+    height: 100vh;
+}
+
+.size-96px{
+    font-size: 96px;
+}
+
+.size-20px{
+    font-size: 20px;
+}
+
+/*BOTAO*/
+
+.buttonHero{
+    width: 200px;
+    height: 41px;
+    background-color: #8debe7;
+    border-radius: 8px;
+    border: none;
+    margin: 16px 0 0 0 ;
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and  (max-width: 1000px){
+    .imgHero h1 {
+        font-size: 67px;
+    }
+
+    .imgHero p {
+        font-size: 16px;
+    }
+}
+
+@media screen and  (max-width: 420px){
+    .imgHero h1 {
+        font-size: 48px;
+    }
+
+    .imgHero p {
+        font-size: 12px;
+    }
+}
+
+@media screen and  (max-width: 290px){
+    .imgHero h1 {
+        font-size: 40px;
+    }
+
+    .imgHero p {
+        font-size: 10px;
+    }
+}

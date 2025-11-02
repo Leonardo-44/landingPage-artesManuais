@@ -1,0 +1,108 @@
+/* CENTRALIZAR */
+
+.container{
+    width: 65vw;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.jc-center{
+    justify-content: center;
+}
+
+.alg-center{
+    align-items: center;
+}
+
+.fd-column{
+    flex-direction: column;
+}
+
+.jc-between{
+    justify-content: space-between;
+}
+
+.jc-around{
+    justify-content: space-around;
+}
+
+/*FONTES*/
+
+.fontMont{
+    font-family: "Montserrat", sans-serif;
+}
+
+.fontPlay{
+    font-family: "Playfair", serif;
+}
+
+.size-48px{
+    font-size: 48px;
+}
+
+/*CORES FUNDO*/
+
+.bg-color1{
+    background-color: #F6F4F0;
+}
+
+.bg-color2{
+    background-color: #388091;
+}
+
+.bg-color3{
+    background-color: #275560;
+}
+
+/*CORES FONTE*/
+
+.primeira-cor{
+    color: #fff;
+}
+
+.segunda-cor{
+    color: #f4f4f4;
+}
+
+.terceira-cor{
+    color: #275560;
+}
+
+.quarta-cor{
+    color: #448A9A;
+}
+
+.quinta-cor{
+    color: #007f9c;
+}
+
+.sexta-cor{
+    color: #8DEBE7;
+}
+
+.setima-cor{
+    color: #dedada;
+}
+
+/*TEXTOS*/
+
+.fw-regular{
+    font-weight: 300;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+/*MARGENS*/
+
+.h2-p{
+    margin: 0 0 16px 0;
+}
